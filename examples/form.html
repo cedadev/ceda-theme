@@ -4,15 +4,17 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="some keywords">
-        <meta name="description" content="JASMIN Theme example page">
+        <meta name="description" content="CEDA Theme example page">
 
         <!-- Replace with page title -->
-        <title>Form | JASMIN Theme Examples</title>
+        <title>Form | CEDA Theme Examples</title>
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="../css/bootstrap-theme.css" />
-        <link rel="stylesheet" href="../css/jasmin.css" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/modern-business.css" rel="stylesheet">
+        <link href="css/ceda.css" rel="stylesheet">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -39,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="homepage.html"><!-- Replace with site title -->JASMIN Theme Examples</a>
+                        <a class="navbar-brand" href="homepage.html"><!-- Replace with site title -->CEDA Theme Examples</a>
                     </div>
 
                     <div class="navbar-collapse collapse">
@@ -50,7 +52,7 @@
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="http://help.ceda.ac.uk/collection/59-jasmin-documentation" target="_blank">Help</a></li>
+                            <li><a href="http://help.ceda.ac.uk/collection/1-ceda-archive-and-services" target="_blank">Help</a></li>
                             <li><a href="#" title="Admin area"><i class="fa fa-lg fa-cog fa-fw"></i></a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -71,13 +73,13 @@
                     COOKIELAW BANNER
                 -->
                 <div class="alert alert-info text-center" id="cookielaw_banner">
-                    This website and other JASMIN sites use cookies.
+                    This website and other CEDA sites use cookies.
                     By continuing to use this website you are agreeing to our use of cookies.
                     <div class="btn-group">
                         <button type="button" class="btn btn-default"
                                 onclick="javascript:Cookielaw.createCookie();$('#cookielaw_banner').slideUp();">OK</button>
                         <button type="button" class="btn btn-default"
-                                onclick="javascript:window.open('https://accounts.jasmin.ac.uk/account/privacy/')">Find out more</button>
+                                onclick="javascript:window.open('http://www.ceda.ac.uk/privacy-and-cookies/')">Find out more</button>
                     </div>
                 </div>
                 <script>
@@ -184,16 +186,16 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div id="nerc-logo" class="col-sm-6">
-                        <a href="http://www.nerc.ac.uk" title="NERC">
-                            <img src="../img/nerc-long-logo-261.png" title="NERC logo"
-                                 height="53" width="261" alt="NERC logo" />
+                    <div id="ncas-logo" class="col-sm-6">
+                        <a href="http://www.ncas.ac.uk" title="NCAS">
+                            <img src="../img/ncas_logo_transparent_blacktext.png" title="NERC logo"
+                                 height="58" width="210" alt="NERC logo" />
                         </a>
                     </div>
-                    <div id="stfc-logo" class="col-sm-6">
-                        <a href="http://www.stfc.ac.uk" title="STFC">
-                            <img src="../img/STFCMediumColourTrans.png" title="STFC logo"
-                                 height="57" width="261" alt="STFC logo" />
+                    <div id="nceo-logo" class="col-sm-6">
+                        <a href="http://www.nceo.ac.uk" title="NCEO">
+                            <img src="../img/nceologo200.png" title="NCEO logo"
+                                 height="52" width="200" alt="NCEO logo" />
                         </a>
                     </div>
                 </div>
@@ -202,10 +204,8 @@
                         <p class="site-info">
                             Copyright &copy; 2017 <a href="http://www.stfc.ac.uk">STFC</a> |
                             All Rights Reserved |
-                            <a href="https://accounts.jasmin.ac.uk/account/accessibility/" target="_blank">Accessibility</a> |
-                            <a href="https://accounts.jasmin.ac.uk/account/privacy/" target="_blank">Privacy</a> |
-                            <a href="https://accounts.jasmin.ac.uk/account/support/" target="_blank">Support</a> |
-                            <a href="https://accounts.jasmin.ac.uk/account/conditions/" target="_blank">Terms and Conditions</a>
+                            <a href="http://www.ceda.ac.uk/accessibility" target="_blank">Accessibility</a> |
+                            <a href="http://www.ceda.ac.uk/disclaimer" target="_blank">Disclaimer</a> | <a href="http://www.ceda.ac.uk/privacy-and-cookies/" target="_blank">Privacy and Cookies</a>
                         </p>
                     </div>
                 </div>
@@ -213,36 +213,48 @@
         </footer>
 
         <script src="../js/invalid_controls.js"></script>
-        <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//jasmin-help.helpscoutdocs.com/"},contact:{enabled:!0,formId:"71e2f368-bd39-11e6-91aa-0a5fecc78a4d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+        <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"http://help.ceda.ac.uk"},contact:{enabled:!0,formId:"d94ad5e4-cc13-11e5-9e75-0a7d6919297d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
         <script>
-            HS.beacon.config({
-                color: '#ff6600',
-                topArticles: true,
-                icon: 'question',
-                translation: {
-                    searchLabel: 'Search JASMIN documentation',
-                    searchErrorLabel: 'There was a problem searching the Help pages. Visit: help.ceda.ac.uk or email support@ceda.ac.uk'
-                },
-                topics: [
-                    { val: 'jasmin-help', label: 'Help with JASMIN/CEMS'},
-                    { val: 'account-problem', label: 'Help with my account'},
-                    { val: 'bug-flag', label: 'Found a bug?'},
-                    { val: 'content-flag', label: 'Content on this page looks wrong'}
-                ],
-                attachment: true,
-                instructions:'Drop CEDA Support a message below and we\'ll try to help.'
-            });
-            HS.beacon.ready(function() {
-                HS.beacon.suggest([]);
-                // If the user doesn't have the cookie, pop ourselves up, but set the cookie
-                if( document.cookie.match(/^(.*; ?)?hs_beacon_shown=[^;]+/) === null ) {
-                    // Open the Beacon as soon as it's ready
-                    this.open();
-                    setTimeout(this.close, 3000);
-                    // Set cookie that expires at end of session
-                    document.cookie = "hs_beacon_shown=1; expires=; path=/; ";
-                }
-            });
+          HS.beacon.config({
+            // modal: true,
+            color: '#ff6600',
+            topArticles: true,
+            //icon: 'message',
+            icon: 'question',
+            translation: {
+              searchLabel: 'Search CEDA and JASMIN docs',
+              searchErrorLabel: 'There was a problem searching the Help pages. Visit: help.ceda.ac.uk or email support@ceda.ac.uk'
+            },
+            topics: [
+              { val: 'ceda-help', label: 'Help with CEDA archives' },
+              { val: 'jasmin-help', label: 'Help with JASMIN/CEMS'},
+              { val: 'account-problem', label: 'Help with my account'},
+              { val: 'bug-flag', label: 'Found a bug?'},
+              { val: 'content-flag', label: 'Content on this page looks wrong'}
+            ],
+            attachment: true,
+            instructions:'Drop CEDA Support a message below and we\'ll try to help.'
+          });
+          HS.beacon.ready(function() {
+            HS.beacon.suggest([
+        	  '56f264e59033604f41b37931',
+              '56f0217ac697913a277bd865',
+        	  '575e96789033601be51e8fa0',
+          	  '56f0229bc697913a277bd873',
+        	  '56fada199033601eb67375c0',
+              '56f13a7dc697913a277bddcd',
+              '56f26f479033604f41b37989'
+        	  ]);
+            // If the user doesn't have the cookie, pop ourselves up, but set the cookie
+            if( document.cookie.match(/^(.*; ?)?hs_beacon_shown=[^;]+/) === null ) {
+              // Open the Beacon as soon as it's ready
+              this.open();
+              //HS.beacon.search('account');
+              setTimeout(this.close, 3000);
+              // Set cookie that expires at end of session
+              document.cookie = "hs_beacon_shown=1; expires=; domain=.ceda.ac.uk; path=/; ";
+            }
+          });
         </script>
     </body>
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Bootstrap Core
+        CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/modern-business.css" rel="stylesheet">
+        <link href="../css/ceda.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+        queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file://
+        -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head><body>
+
+        <div class="container">
+
+            <!-- BEGIN # BOOTSNIP INFO -->
+            <div class="container">
+            	<div class="row">
+            		<h1 class="text-center">Modal Login with jQuery Effects</h1>
+                    <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Open Login Modal</a></p>
+            	</div>
+            </div>
+            <!-- END # BOOTSNIP INFO -->
+
+            <!-- BEGIN # MODAL LOGIN -->
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                	<div class="modal-dialog">
+            			<div class="modal-content">
+            				<div class="modal-header" align="center">
+            					<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">
+            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            					</button>
+            				</div>
+
+                            <!-- Begin # DIV Form -->
+                            <div id="div-forms">
+
+                                <!-- Begin # Login Form -->
+                                <form id="login-form">
+            		                <div class="modal-body">
+            				    		<div id="div-login-msg">
+                                            <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                            <span id="text-login-msg">Type your username and password.</span>
+                                        </div>
+            				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+            				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                    		    	</div>
+            				        <div class="modal-footer">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                        </div>
+            				    	    <div>
+                                            <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                            <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                        </div>
+            				        </div>
+                                </form>
+                                <!-- End # Login Form -->
+
+                                <!-- Begin | Lost Password Form -->
+                                <form id="lost-form" style="display:none;">
+                	    		    <div class="modal-body">
+            		    				<div id="div-lost-msg">
+                                            <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                            <span id="text-lost-msg">Type your e-mail.</span>
+                                        </div>
+            		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                        			</div>
+            		    		    <div class="modal-footer">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                        </div>
+                                        <div>
+                                            <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                        </div>
+            		    		    </div>
+                                </form>
+                                <!-- End | Lost Password Form -->
+
+                                <!-- Begin | Register Form -->
+                                <form id="register-form" style="display:none;">
+                        		    <div class="modal-body">
+            		    				<div id="div-register-msg">
+                                            <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                            <span id="text-register-msg">Register an account.</span>
+                                        </div>
+            		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                        <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                        			</div>
+            		    		    <div class="modal-footer">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                        </div>
+                                        <div>
+                                            <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                        </div>
+            		    		    </div>
+                                </form>
+                                <!-- End | Register Form -->
+
+                            </div>
+                            <!-- End # DIV Form -->
+
+            			</div>
+            		</div>
+            	</div>
+                <!-- END # MODAL LOGIN -->
+
+        </div> <!-- /container -->
+
+
+
+    <!-- Footer -->
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 float-left">
+                    <a href="http://www.ncas.ac.uk" title="NCAS"><img src="../img/ncas_logo_transparent_blacktext.png" title="NCAS logo" alt="NCAS logo" class="img-responsive center-block"></a>
+                </div>
+                <div class="col-sm-4 hidden-xs">
+                        <p class="text-center small">
+                            Copyright © 2017 <a href="http://www.stfc.ac.uk">STFC</a>
+                            All Rights Reserved<br>
+                            <a href="http://www.ceda.ac.uk/accessibility" target="_blank">Accessibility</a> |
+                            <a href="http://www.ceda.ac.uk/disclaimer" target="_blank">Disclaimer</a> | <a href="http://www.ceda.ac.uk/privacy-and-cookies/" target="_blank">Privacy and Cookies</a>
+                        </p>
+                </div>
+                <div class="col-xs-4 float-right">
+                    <a href="http://www.nceo.ac.uk" title="STFC"><img src="../img/nceologo200.png" title="NCEO logo" alt="NCEO logo" class="img-responsive center-block"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="../js/invalid_controls.js"></script>
+
+
+</body>
+</html>

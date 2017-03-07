@@ -28,7 +28,7 @@ footer {
 /* Match height of navbar to height of logo image */
 
 .navbar-brand {
-    height: 94px; /* Adjust this to the height of the logo image */
+    height: auto; /* Adjust this to the height of the logo image */
 }
 
 /*
@@ -37,12 +37,12 @@ footer {
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-.navbar-fixed-top .nav {
-    padding: 15px 0;
+.navbar-fixed-top .nav .navbar-brand {
+    padding: 0 0;
 }
 
 .navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+    padding: 0 0;
 }
 
 @media(min-width:768px) {
@@ -50,7 +50,7 @@ footer {
         padding-top: 94px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
-    .navbar-fixed-top .navbar-brand {
+    .navbar-fixed-top .nav .navbar-brand {
         padding: 0 0;
     }
 }
